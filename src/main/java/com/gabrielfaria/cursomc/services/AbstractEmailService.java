@@ -2,35 +2,27 @@ package com.gabrielfaria.cursomc.services;
 
 import java.util.Date;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
-=======
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import org.thymeleaf.TemplateEngine;
-=======
+
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
-=======
+
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
+
 
 import com.gabrielfaria.cursomc.domain.Pedido;
 
@@ -39,25 +31,17 @@ public abstract class AbstractEmailService implements EmailService {
 	@Value("${default.sender}")
 	private String sender;
 	
-<<<<<<< HEAD
-<<<<<<< HEAD
 	/*@Autowired
 	private TemplateEngine templateEngine;
 	
 	@Autowired
 	private JavaMailSender javaMailSender;*/
-=======
-=======
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
+
 	@Autowired
 	private TemplateEngine templateEngine;
 	
 	@Autowired
 	private JavaMailSender javaMailSender;
-<<<<<<< HEAD
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
-=======
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
 
 	@Override
 	public void sendOrderConfirmationEmail(Pedido obj) {
@@ -74,22 +58,16 @@ public abstract class AbstractEmailService implements EmailService {
 		sm.setText(obj.toString());
 		return sm;
 	}
-	
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 	/*protected String htmlFromTemplatePedido(Pedido obj) {
 		Context context = new Context();
 		context.setVariable("pedido", obj);
 		return templateEngine.process("email/confirmacaoPedido", context);
-=======
-=======
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
+
 	protected String htmlFromTemplatePedido(Pedido obj) {
 		Context context = new Context();
 		context.setVariable("pedido", obj);
 		return templateEngine.process("email/confirmacaoPedido", context);
-<<<<<<< HEAD
-=======
 	}
 	
 	@Override
@@ -111,7 +89,6 @@ public abstract class AbstractEmailService implements EmailService {
 		mmh.setSentDate(new Date(System.currentTimeMillis()));
 		mmh.setText(htmlFromTemplatePedido(obj), true);
 		return mimeMessage;
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
 	}
 	
 	@Override

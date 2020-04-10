@@ -12,19 +12,8 @@ public interface EmailService {
 	
 	void sendEmail(SimpleMailMessage msg);
 	
-<<<<<<< HEAD
-<<<<<<< HEAD
 	//void sendOrderConfirmationHtmlEmail(Pedido obj);
 	
 	//void sendHtmlEmail(MimeMessage msg);
-=======
-	void sendOrderConfirmationHtmlEmail(Pedido obj);
-	
-	void sendHtmlEmail(MimeMessage msg);
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
-=======
-	void sendOrderConfirmationHtmlEmail(Pedido obj);
-	
-	void sendHtmlEmail(MimeMessage msg);
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
+
 }

@@ -72,8 +72,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -85,10 +83,6 @@
 			<artifactId>jjwt</artifactId>
 			<version>0.7.0</version>
 		</dependency>
-=======
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
-=======
->>>>>>> 487bbca4b682fbb57007a7930bdec68c9def70b4
 
 	</dependencies>
 
