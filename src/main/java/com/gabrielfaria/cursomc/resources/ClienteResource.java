@@ -73,7 +73,7 @@ public class ClienteResource {
 		List<Cliente> list = service.findAll();
 		List<ClienteDTO> listDto = list.stream().map(obj -> new ClienteDTO(obj)).collect(Collectors.toList());
 		return ResponseEntity.ok().body(listDto); //DTO é utilizada para escolher quais variaveis vão ser exibidas na tela 
-		//comando stream esta sendo utilizado para converter uma lista em outra lista.
+		//comando stream esta sendo utilizado para converter a lista em uma lista de DTO's.
 	}
 	
 	@PreAuthorize("hasAnyRole('ADMIN')")
